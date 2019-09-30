@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head>
+    <script src="../webcomponentsjs/webcomponents-loader.js"></script>
+    <link rel="import" href="../polymer/polymer.html">
+    <link href="polymer-d3.html" rel="import">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <!--
+    <link href="bullet-chart/bullet-chart.html" rel="import">
+    <link href="difference-chart/difference-chart.html" rel="import">
+    -->
+    <style>
+    body{
+      /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    }
+    .d3-tip{
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: small;
+    }
+    </style>
+  </head>
+  <body>
+
+    <!-- <box-plot>
+      <chart-input-group slot="chart-input-group">
+        <chart-input slot="chart-input" axis="x" label="x-axis"></chart-input>
+        <chart-input slot="chart-input" axis="y" label="y-axis"></chart-input>
+        <chart-input slot="chart-input" axis="z" label="z-axis"></chart-input>
+      </chart-input-group>
+    </box-plot> -->
+
+
+<!-- <pie-chart></pie-chart>
+<box-plot></box-plot>
+<bullet-chart></bullet-chart>
+<calendar-chart></calendar-chart>
+<area-chart></area-chart> -->
+
+
+
+
+
+    <!-- <script src="data.js"></script> -->
+    <polymer-d3 import-file></polymer-d3>
+    <script type="text/javascript">
+      addEventListener('WebComponentsReady', function() {
+        Polymer.dom(this.root).querySelector('polymer-d3').paragraphId = guid();
+      })
+      function guid() {
+        function s4() {
+          return Math.floor((1 + Math.random()) * 0x10000)
+            .toString(16)
+            .substring(1);
+        }
+        return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+          s4() + '-' + s4() + s4() + s4();
+      }
+    </script>
+
+
+</body></html>
